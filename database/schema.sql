@@ -22,6 +22,6 @@ CREATE TABLE IF NOT EXISTS contacts (
 
 -- Sample data so the list isn't empty on first run.
 INSERT INTO contacts (name, email, phone) VALUES
-    ('abdullah fahad',   'abbdul@gmail.com',   '+966 50 123 4567'),
-    ('omar Alshammari','omar@gmail.com',   '055-987-6543'),
-    ('ahmed Hassan',    'lina@gmail.com',   '+966 54 222 3344');
+    ('abdullah fahad',   'abbdul@example.com',   '+966 50 123 4567'),
+    ('omar Alshammari','omar@example.com',   '055-987-6543'),
+    ('ahmed Hassan',    'ahmmed@example.com',   '+966 54 222 3344');
