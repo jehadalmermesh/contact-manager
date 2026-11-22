@@ -95,13 +95,16 @@ contact-manager/
 | 13 | **Security headers**: CSP, `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy` | `index.php` | Clickjacking, injected scripts |
 
 ### How I tested it
-- Typed `<script>alert(1)</script>'; DROP TABLE contacts;--` as a name. It was saved as text and shown escaped, and the table was still there.
-- Opened add/edit pages and sent POST requests while logged out: redirected to login.
-- Sent a POST without a CSRF token: rejected (419).
-- Visited the delete URL with GET: 405.
-- Entered a wrong password, invalid email/phone, and `id=abc`: proper errors or 404.
+I ran these tests myself in Chrome on XAMPP (MariaDB 10.4, PHP 8.2) on 22 Nov 2026:
 
----
+| # | Test | Result |
+|---|---|---|
+| 1 | Added a contact named `<script>alert(1)</script>` | Shown as plain text, no alert popup |
+| 2 | Submitted name `a`, email `aaa`, phone `qqqwwe` | Three validation errors, nothing saved |
+| 3 | Opened the delete URL directly with GET | "Method not allowed." Nothing deleted |
+| 4 | Opened the edit page with `id=abc` | "Page not found." |
+| 5 | Logged out, then opened the add-contact URL | Redirected to the login page |
+| 6 | Logged in with a wrong password | "Invalid username or password." |
 
 ## Week-5 progress
 <!-- Fill this in honestly: what you had working by the end of week 5, with the commit hash(es) that show it. -->
