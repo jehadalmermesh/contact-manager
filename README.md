@@ -107,7 +107,28 @@ I ran these tests myself in Chrome on XAMPP (MariaDB 10.4, PHP 8.2) on 22 Nov 20
 | 6 | Logged in with a wrong password | "Invalid username or password." |
 
 ## Week-5 progress
-<!-- Fill this in honestly: what you had working by the end of week 5, with the commit hash(es) that show it. -->
+I did not record any week-5 progress for this assignment. All work on this project was done and committed on 22 Nov 2026, as the commit history shows.
+
+## Integrity statement
+I, Jehad Almarzooq (202106712), declare that I did not share my code with other students or copy theirs.
+
+**Use of AI:** I used an AI assistant (Claude, by Anthropic) to generate the initial project code (front controller, models, controllers, views, security helpers and SQL script) and the first draft of this README. I then set up, tested and modified the project myself, and I understand how each part works.
+
+**My own work:**
+- Set up the project on XAMPP (database import, config file, admin account)
+- Changed the colour scheme (`public/css/style.css`)
+- Added a footer with my name and student ID
+- Added the total contacts count to the list page
+- Replaced the sample data and switched sample emails to the `example.com` domain
+- Ran the six security tests listed above and recorded the results
+- Managed version control with Git and GitHub
+
+**Other sources:**
+- PHP Manual: https://www.php.net/manual/
+- OWASP Cheat Sheets: https://cheatsheetseries.owasp.org/
+- Course lecture notes, topics 3–7
+
+Signed: Jehad Almarzooq    Date: 22 Nov 2026
 
 ## Integrity statement
 <!-- Edit this so it is accurate, then sign it. Keep the AI declaration. The course treats UNDECLARED AI code as plagiarism. -->
