@@ -1,5 +1,5 @@
 <div class="page-head">
-    <h1>Contacts</h1>
+    <h1>Contacts (<?= count($contacts) ?>)</h1>
     <?php if (Auth::check()): ?>
         <a class="btn" href="<?= e(url('contacts/create')) ?>">+ Add contact</a>
     <?php endif; ?>
